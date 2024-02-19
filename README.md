@@ -43,6 +43,8 @@ True for admin False for simple.
 
 you can make a user record with isAdmin=1 and start to use the frontend and login with the user and manage users and their tasks.
 
+Admin users are able to manage users and tasks. But simple users only can manage their own tasks.
+
 ## Security
 
 ### Rate Limiting
