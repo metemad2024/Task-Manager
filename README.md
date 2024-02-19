@@ -71,6 +71,15 @@ The default is 60 requests per minute. You can change it as you want.
 
 All input fields to APIs are protected against XSS attack. 
 
+## API in POSTMAN
+In order to test APIs you can import json files in Postman folder into Postman tool.
+All APIs have a postman test request and you can use them easily.
+
+Files:
+/Postman/Task APIs.postman_collection.json
+/Postman/User APIs.postman_collection.json
+
+
 
 ## License
 
