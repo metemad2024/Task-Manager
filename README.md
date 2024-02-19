@@ -53,11 +53,17 @@ To protect project from bots and DoS attacks we used a Rate-Limiter in the proje
 /app/Providers/RouteServiceProvider.php
 
 protected function configureRateLimiting()
+
 {
+
 	RateLimiter::for('api', function (Request $request) {
+ 
 		return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
+  
 	});
+ 
 }
+
 
 The default is 60 requests per minute. You can change it as you want.
 
