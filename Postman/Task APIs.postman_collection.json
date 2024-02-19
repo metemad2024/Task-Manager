@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "577ecfc5-ea84-4af3-b02c-85eeace18b86",
+		"name": "Task APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6675613"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/addtask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjEwMjA4NTE1N2I1YWJkMTdlOTk1MGYxMjVjODg2ODcyNmM4OWI5ZmUzZmVmNzNlZmIyOTE5MGE4Y2RiYjAwZjY1NzEyMDQ4NDQ0OTI5NGEiLCJpYXQiOjE3MDgwMjMzMjUsIm5iZiI6MTcwODAyMzMyNSwiZXhwIjoxNzM5NjQ1NzI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jMy7ZUvW1kQ6-iiIa7jRGfsWAdp70TiEaXX3qx9AF3cSLQfb_a8rmTztW3DWwGrTto5xuw_5XadLcLIeLMrSADv59X2xBfrEzs2spKaTFTzvhH5tp_vlTbMPQEX8wz_Zy4qHVjU6ZjO4ebT8GG97LK45gkv9PUGY4Eob5itPiuGA6OeiAOT828iIXh7BofQOmOmRsD1VgalaneHCjkgPyxPeldMiF-n59wKwL9oWIWwa-f5ab-opjlVsCZqV5eEgMu9EDdDUqD27wqDU9tpoVTmhUQd4f0EWa-169N2lq_-XwD8YSBXeGM3z52jgRyRH8r9atGUo88N3YjFl6BV6h66D3qA-YxvrP4nwXQ-oxf-xwzv_aqPCNRaRp_BlvEncHcTTdl22y67e1FyabYzToLZZtrP05koGY_dxZPZTF1rRnBCOchjSLSlZct90B_GK05HTDFr2u8fxP0VG-dGIRO2UIRDFewO1iN2SoUTR35l1UGeY-EJ3ueZj00NtSxihXyQqmqwzFR0GRbuy4vS1g-tUg_WqRDeqjidcyFlAWS6qsWNnF1ZstntYztbF0r3fecSHgLeiFoORX5BW5tYnUH72dQL_pndpPzM9M1CSgrVaVv9bmw94d01O7fY4P-wWW2nESpCucMkhEdQbSnUxhXhZxB3gs4l5Ap1RoYfnaA4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "task 552",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "update the list of users",
+							"type": "text"
+						},
+						{
+							"key": "dead_date",
+							"value": "2024-03-03",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/addtask",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addtask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/edittask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjEwMjA4NTE1N2I1YWJkMTdlOTk1MGYxMjVjODg2ODcyNmM4OWI5ZmUzZmVmNzNlZmIyOTE5MGE4Y2RiYjAwZjY1NzEyMDQ4NDQ0OTI5NGEiLCJpYXQiOjE3MDgwMjMzMjUsIm5iZiI6MTcwODAyMzMyNSwiZXhwIjoxNzM5NjQ1NzI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jMy7ZUvW1kQ6-iiIa7jRGfsWAdp70TiEaXX3qx9AF3cSLQfb_a8rmTztW3DWwGrTto5xuw_5XadLcLIeLMrSADv59X2xBfrEzs2spKaTFTzvhH5tp_vlTbMPQEX8wz_Zy4qHVjU6ZjO4ebT8GG97LK45gkv9PUGY4Eob5itPiuGA6OeiAOT828iIXh7BofQOmOmRsD1VgalaneHCjkgPyxPeldMiF-n59wKwL9oWIWwa-f5ab-opjlVsCZqV5eEgMu9EDdDUqD27wqDU9tpoVTmhUQd4f0EWa-169N2lq_-XwD8YSBXeGM3z52jgRyRH8r9atGUo88N3YjFl6BV6h66D3qA-YxvrP4nwXQ-oxf-xwzv_aqPCNRaRp_BlvEncHcTTdl22y67e1FyabYzToLZZtrP05koGY_dxZPZTF1rRnBCOchjSLSlZct90B_GK05HTDFr2u8fxP0VG-dGIRO2UIRDFewO1iN2SoUTR35l1UGeY-EJ3ueZj00NtSxihXyQqmqwzFR0GRbuy4vS1g-tUg_WqRDeqjidcyFlAWS6qsWNnF1ZstntYztbF0r3fecSHgLeiFoORX5BW5tYnUH72dQL_pndpPzM9M1CSgrVaVv9bmw94d01O7fY4P-wWW2nESpCucMkhEdQbSnUxhXhZxB3gs4l5Ap1RoYfnaA4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "task141",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "update the list of users",
+							"type": "text"
+						},
+						{
+							"key": "dead_date",
+							"value": "2024-03-03",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/edittask",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"edittask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/deletetask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjEwMjA4NTE1N2I1YWJkMTdlOTk1MGYxMjVjODg2ODcyNmM4OWI5ZmUzZmVmNzNlZmIyOTE5MGE4Y2RiYjAwZjY1NzEyMDQ4NDQ0OTI5NGEiLCJpYXQiOjE3MDgwMjMzMjUsIm5iZiI6MTcwODAyMzMyNSwiZXhwIjoxNzM5NjQ1NzI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jMy7ZUvW1kQ6-iiIa7jRGfsWAdp70TiEaXX3qx9AF3cSLQfb_a8rmTztW3DWwGrTto5xuw_5XadLcLIeLMrSADv59X2xBfrEzs2spKaTFTzvhH5tp_vlTbMPQEX8wz_Zy4qHVjU6ZjO4ebT8GG97LK45gkv9PUGY4Eob5itPiuGA6OeiAOT828iIXh7BofQOmOmRsD1VgalaneHCjkgPyxPeldMiF-n59wKwL9oWIWwa-f5ab-opjlVsCZqV5eEgMu9EDdDUqD27wqDU9tpoVTmhUQd4f0EWa-169N2lq_-XwD8YSBXeGM3z52jgRyRH8r9atGUo88N3YjFl6BV6h66D3qA-YxvrP4nwXQ-oxf-xwzv_aqPCNRaRp_BlvEncHcTTdl22y67e1FyabYzToLZZtrP05koGY_dxZPZTF1rRnBCOchjSLSlZct90B_GK05HTDFr2u8fxP0VG-dGIRO2UIRDFewO1iN2SoUTR35l1UGeY-EJ3ueZj00NtSxihXyQqmqwzFR0GRbuy4vS1g-tUg_WqRDeqjidcyFlAWS6qsWNnF1ZstntYztbF0r3fecSHgLeiFoORX5BW5tYnUH72dQL_pndpPzM9M1CSgrVaVv9bmw94d01O7fY4P-wWW2nESpCucMkhEdQbSnUxhXhZxB3gs4l5Ap1RoYfnaA4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deletetask",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deletetask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasklist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjEwMjA4NTE1N2I1YWJkMTdlOTk1MGYxMjVjODg2ODcyNmM4OWI5ZmUzZmVmNzNlZmIyOTE5MGE4Y2RiYjAwZjY1NzEyMDQ4NDQ0OTI5NGEiLCJpYXQiOjE3MDgwMjMzMjUsIm5iZiI6MTcwODAyMzMyNSwiZXhwIjoxNzM5NjQ1NzI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jMy7ZUvW1kQ6-iiIa7jRGfsWAdp70TiEaXX3qx9AF3cSLQfb_a8rmTztW3DWwGrTto5xuw_5XadLcLIeLMrSADv59X2xBfrEzs2spKaTFTzvhH5tp_vlTbMPQEX8wz_Zy4qHVjU6ZjO4ebT8GG97LK45gkv9PUGY4Eob5itPiuGA6OeiAOT828iIXh7BofQOmOmRsD1VgalaneHCjkgPyxPeldMiF-n59wKwL9oWIWwa-f5ab-opjlVsCZqV5eEgMu9EDdDUqD27wqDU9tpoVTmhUQd4f0EWa-169N2lq_-XwD8YSBXeGM3z52jgRyRH8r9atGUo88N3YjFl6BV6h66D3qA-YxvrP4nwXQ-oxf-xwzv_aqPCNRaRp_BlvEncHcTTdl22y67e1FyabYzToLZZtrP05koGY_dxZPZTF1rRnBCOchjSLSlZct90B_GK05HTDFr2u8fxP0VG-dGIRO2UIRDFewO1iN2SoUTR35l1UGeY-EJ3ueZj00NtSxihXyQqmqwzFR0GRbuy4vS1g-tUg_WqRDeqjidcyFlAWS6qsWNnF1ZstntYztbF0r3fecSHgLeiFoORX5BW5tYnUH72dQL_pndpPzM9M1CSgrVaVv9bmw94d01O7fY4P-wWW2nESpCucMkhEdQbSnUxhXhZxB3gs4l5Ap1RoYfnaA4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasklist?page=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasklist"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

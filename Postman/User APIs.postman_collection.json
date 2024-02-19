@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "9506f049-a35b-44f2-bb1e-50b3d250e568",
+		"name": "User APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6675613"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "mostafa2024@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "abcd1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjEwMjA4NTE1N2I1YWJkMTdlOTk1MGYxMjVjODg2ODcyNmM4OWI5ZmUzZmVmNzNlZmIyOTE5MGE4Y2RiYjAwZjY1NzEyMDQ4NDQ0OTI5NGEiLCJpYXQiOjE3MDgwMjMzMjUsIm5iZiI6MTcwODAyMzMyNSwiZXhwIjoxNzM5NjQ1NzI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jMy7ZUvW1kQ6-iiIa7jRGfsWAdp70TiEaXX3qx9AF3cSLQfb_a8rmTztW3DWwGrTto5xuw_5XadLcLIeLMrSADv59X2xBfrEzs2spKaTFTzvhH5tp_vlTbMPQEX8wz_Zy4qHVjU6ZjO4ebT8GG97LK45gkv9PUGY4Eob5itPiuGA6OeiAOT828iIXh7BofQOmOmRsD1VgalaneHCjkgPyxPeldMiF-n59wKwL9oWIWwa-f5ab-opjlVsCZqV5eEgMu9EDdDUqD27wqDU9tpoVTmhUQd4f0EWa-169N2lq_-XwD8YSBXeGM3z52jgRyRH8r9atGUo88N3YjFl6BV6h66D3qA-YxvrP4nwXQ-oxf-xwzv_aqPCNRaRp_BlvEncHcTTdl22y67e1FyabYzToLZZtrP05koGY_dxZPZTF1rRnBCOchjSLSlZct90B_GK05HTDFr2u8fxP0VG-dGIRO2UIRDFewO1iN2SoUTR35l1UGeY-EJ3ueZj00NtSxihXyQqmqwzFR0GRbuy4vS1g-tUg_WqRDeqjidcyFlAWS6qsWNnF1ZstntYztbF0r3fecSHgLeiFoORX5BW5tYnUH72dQL_pndpPzM9M1CSgrVaVv9bmw94d01O7fY4P-wWW2nESpCucMkhEdQbSnUxhXhZxB3gs4l5Ap1RoYfnaA4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDU4NDQwMGQ4ZjA3ZTVjNjM2NjNiMjVlOTMwMmM4NzU1ZWQ2M2NlZDZlNDZiYzFiNDQxNTVhODdlYzcwZGRkMjMxNDBkNjdiODMxYjA1YzAiLCJpYXQiOjE3MDc5MDcxMjUsIm5iZiI6MTcwNzkwNzEyNSwiZXhwIjoxNzM5NTI5NTI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.mA84xcEEZF7T9Yiq9nM8rPdtuGctvJYZPkwul0SF9fe_gIyILRKrGi_mX8fb1LY59sSIew8lbrFOj2wE5_TmDzAke-20KVAhozKP4DgVRCb9uaZg_DB2TSLC0RLmSTHpXxTE7nkdwzlH-hq64JffcGGHcfaQ97i6yt7Azkefy58--KsPFKXXdYhJcw8cpNFOPQXZi-XL-CFUr02KkC6_QbvJs3WJBoSRmRoF0tcT6FX0FoUtBbvWM5GUxAfZpoLMJzUyp34f0PH8MWx8x2aRJbvfSLcKxRRSkE2YX8jL2FcpWtwkdp5sgCaKz6uLxmyz_DZTSyulZLNCApK--539XKU_1Mwe2hoWR9HoQOph8AcQ3fcimGxYe2FIj_Z3s5kRdFJfpDOn7fpFqi12sHO6ION2mwAdBcXOkMQHzXgqKDzjq87H2HIbwXwAdY8ifL3aE78hufzjZ4BuIBGvf3WTCFlGx2Glk51Rs7IZVvnz3h52Lunh_LoMExFl_kYRjvx1IjGEajyv7XV9iLMjb5Loaw93_90ydz-05Mnn0Ykz9J6iFCn-UTculK7O7kD_ng8v9KTLpoFfZjJksQQrCJz38Hvn3EImNARakS8P1yxTsFyehWSrtQQjGUKCaIF9kIxGGvlMyZoxpnmuinWzbuZD8ngDzwdcCXXWP2qnIW0TI4A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/deleteuser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjEwMjA4NTE1N2I1YWJkMTdlOTk1MGYxMjVjODg2ODcyNmM4OWI5ZmUzZmVmNzNlZmIyOTE5MGE4Y2RiYjAwZjY1NzEyMDQ4NDQ0OTI5NGEiLCJpYXQiOjE3MDgwMjMzMjUsIm5iZiI6MTcwODAyMzMyNSwiZXhwIjoxNzM5NjQ1NzI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jMy7ZUvW1kQ6-iiIa7jRGfsWAdp70TiEaXX3qx9AF3cSLQfb_a8rmTztW3DWwGrTto5xuw_5XadLcLIeLMrSADv59X2xBfrEzs2spKaTFTzvhH5tp_vlTbMPQEX8wz_Zy4qHVjU6ZjO4ebT8GG97LK45gkv9PUGY4Eob5itPiuGA6OeiAOT828iIXh7BofQOmOmRsD1VgalaneHCjkgPyxPeldMiF-n59wKwL9oWIWwa-f5ab-opjlVsCZqV5eEgMu9EDdDUqD27wqDU9tpoVTmhUQd4f0EWa-169N2lq_-XwD8YSBXeGM3z52jgRyRH8r9atGUo88N3YjFl6BV6h66D3qA-YxvrP4nwXQ-oxf-xwzv_aqPCNRaRp_BlvEncHcTTdl22y67e1FyabYzToLZZtrP05koGY_dxZPZTF1rRnBCOchjSLSlZct90B_GK05HTDFr2u8fxP0VG-dGIRO2UIRDFewO1iN2SoUTR35l1UGeY-EJ3ueZj00NtSxihXyQqmqwzFR0GRbuy4vS1g-tUg_WqRDeqjidcyFlAWS6qsWNnF1ZstntYztbF0r3fecSHgLeiFoORX5BW5tYnUH72dQL_pndpPzM9M1CSgrVaVv9bmw94d01O7fY4P-wWW2nESpCucMkhEdQbSnUxhXhZxB3gs4l5Ap1RoYfnaA4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "John B",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "johnbritman1190@yahoo.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "abcd1234",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_confirmation",
+							"value": "abcd1234",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "isAdmin",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deleteuser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deleteuser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
