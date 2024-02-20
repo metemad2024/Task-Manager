@@ -7,23 +7,27 @@ This is a simple Laravel project for a task-manager. the project backend is desi
 
 After downloading the source code, create a new database in mysql and then config .env file in the root directory of project.
 
-You should run migrations to init the database tables. run this command in cli:
-
-php artisan migrate
-
-this command creates all tables in the database.
-
-Then, Run the below command to install all packages from composer.json:
+You should run the below command to install all packages from composer.json:
 
 composer install
 
 this command installs all packages and makes an autoload.php file in /vendor.
 
+Then, run migrations to init the database tables. run this command in cli:
+
+php artisan migrate
+
+this command creates all tables in the database.
+
 Also run the command:
 php artisan passport:install and check that there is the following array in /config/auth.php :
+
 'api' => [
+
 	'driver' => 'passport',
+
 	'provider' => 'users',
+ 
 ]
 
 
